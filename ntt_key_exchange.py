@@ -64,12 +64,12 @@ w = 4           # Primitive 4-th root of unity in GF(17), since w^4 ≡ 1 mod 17
 G = [1, 2, 3, 4]  # Public sequence over GF(17)
 
 # Alice's part
-a = 20122123           # Alice's secret key (small for demo; should be large in practice)
+a = 15           # Alice's secret key (small for demo; should be large in practice)
 Ga = convolve_power(G, a, w, p)
 print("Ga (Alice sends):", Ga)
 
 # Bob's part
-b = 31213121231           # Bob's secret key
+b = 39           # Bob's secret key
 Gb = convolve_power(G, b, w, p)
 print("Gb (Bob sends):", Gb)
 
