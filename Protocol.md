@@ -157,7 +157,7 @@ Thus, if the equation holds, the signature is valid and confirms that the signer
 
 ## Conclusion
 
-This protocol provides a secure and efficient framework for:
+This protocol provides a proposal of a crypto system for:
 - **Key Exchange:**  
   Both parties derive the same shared secret using the associativity of convolution.
   
@@ -167,4 +167,4 @@ This protocol provides a secure and efficient framework for:
 - **Digital Signatures:**  
   The adapted Schnorr-like scheme ensures authenticity and integrity of messages without exposing the private key.
 
-By leveraging the strengths of the Number Theoretic Transform, the protocol achieves efficient computation and strong security properties. The detailed explanations provided here are intended to offer an accessible path to understanding both the high-level concepts and the underlying mathematics of the NTT-based cryptosystem.
+By leveraging the strengths of the Number Theoretic Transform, The detailed explanations provided here are intended to offer an accessible path to understanding both the high-level concepts and the underlying mathematics of the NTT-based cryptosystem.
