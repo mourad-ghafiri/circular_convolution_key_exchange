@@ -45,16 +45,16 @@ def find_primitive_root(n, p):
     return 1000
 
 # Parameters
-p = 2039  # Prime modulus
+p = 257  # Prime modulus
 n = 2     # Sequence length (must divide p-1)
 w = find_primitive_root(n, p)  # Primitive n-th root of unity
 
 # Choose initial G with 2 elements
-x, y = 500, 300  # Example values
+x, y = 113, 2  # Example values
 G = [x, y]
 
 # Choose a secret exponent
-a = 128  # Number of convolutions to visualize
+a = 256  # Number of convolutions to visualize
 
 # Compute all convolutions from G^{*1} to G^{*a}
 convolution_points = [G]  # Start with G^{*1} (which is just G)
@@ -140,6 +140,9 @@ ani = FuncAnimation(fig, update, frames=len(x_coords), init_func=init, blit=True
 plt.figure(1)
 plt.savefig('convolution_plot_static.png', dpi=300, bbox_inches='tight')
 ani.save('convolution_progression.gif', writer='pillow', fps=1, dpi=100)
+
+# Save a lower resolution version
+ani.save('convolution_progression_lowres.gif', writer='pillow', fps=1, dpi=50)
 
 plt.show()
 
