@@ -1,5 +1,7 @@
 # Number Theoretic Transform (NTT)-Based Key Exchange Protocol
 
+![Convolution Progression](convolution_progression.gif)
+
 ## Introduction
 
 The Number Theoretic Transform (NTT)-based key exchange protocol is a cryptographic method that allows two parties, Alice and Bob, to securely agree on a shared secret key over an insecure channel. Unlike the traditional Diffie-Hellman key exchange, which uses single numbers, this protocol operates on sequences of elements in a finite field. The NTT enhances efficiency by speeding up convolution operations, making this a sequence-based alternative for key agreement.
