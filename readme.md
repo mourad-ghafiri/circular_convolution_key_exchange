@@ -1,6 +1,6 @@
 # Number Theoretic Transform (NTT)-Based Key Exchange Protocol
 
-![Convolution Progression](convolution_progression.gif)
+![Convolution Progression](convolution_progression_lowres.gif)
 
 ## Introduction
 
