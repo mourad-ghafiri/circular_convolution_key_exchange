@@ -6,7 +6,6 @@ The Number Theoretic Transform (NTT)-based key exchange protocol is a cryptograp
 
 This document explains the protocol in detail, including its mathematical basis, the key exchange steps, and a proof that both parties compute the same key.
 
-![Convolution Progression](convolution_progression_animation.gif)
 
 ## Public Parameters
 
@@ -37,7 +36,11 @@ The convolution of two sequences A and B, each of length n, results in a sequenc
 
 - C[k] = sum of (A[i] * B[(k - i) mod n]) over i from 0 to n-1, all modulo p.
 
-In this protocol, we repeatedly convolve a sequence with itself. The notation G^{*a} denotes G convolved with itself a times, computed efficiently via:
+The notation G^{*a} denotes G convolved with itself a times.
+
+![Convolution Progression](convolution_progression_animation.gif)
+
+In this protocol, we repeatedly convolve a sequence with itself. Computed efficiently via:
 
 1. Compute F = NTT(G).
 2. Raise each element to the power a: F^a = [F[0]^a, F[1]^a, ..., F[n-1]^a] mod p.
