@@ -141,7 +141,7 @@ plt.figure(1)
 plt.savefig('convolution_plot_static.png', dpi=300, bbox_inches='tight')
 
 # Save a lower resolution version
-ani.save('convolution_progression_lowres.gif', writer='pillow', fps=1, dpi=50)
+ani.save('convolution_progression_animation.gif', writer='pillow', fps=1, dpi=50)
 
 plt.show()
 

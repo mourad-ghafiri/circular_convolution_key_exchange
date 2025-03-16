@@ -6,7 +6,7 @@ The Number Theoretic Transform (NTT)-based key exchange protocol is a cryptograp
 
 This document explains the protocol in detail, including its mathematical basis, the key exchange steps, and a proof that both parties compute the same key.
 
-![Convolution Progression](convolution_progression_lowres.gif)
+![Convolution Progression](convolution_progression_animation.gif)
 
 ## Public Parameters
 
